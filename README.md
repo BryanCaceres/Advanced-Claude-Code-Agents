@@ -369,10 +369,10 @@ Orchestrators manage workflows, coordinate parallel execution, consolidate findi
 
 ```bash
 # 1. Add the marketplace
-/plugin marketplace add https://github.com/YOUR_USERNAME/YOUR_REPO
+/plugin marketplace add https://github.com/BryanCaceres/advanced-claude-code-agents
 
 # 2. Install the plugin
-/plugin install advance-dev-agents@advance-dev-agents-marketplace
+/plugin install advance-dev-agents@advance-dev-agents
 ```
 
 ---
