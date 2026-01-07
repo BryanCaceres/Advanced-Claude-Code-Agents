@@ -7,12 +7,13 @@
 
 ## 📦 Installation
 
+/plugin install advance-dev-agents@advance-dev-agents
 ```bash
 # 1. Add the marketplace
-/plugin marketplace add https://github.com/BryanCaceres/advanced-claude-code-Agents
+/plugin marketplace add https://github.com/bryan-duarte/advanced-claude-code-agents
 
 # 2. Install the plugin
-/plugin install advance-dev-agents@advance-dev-agents-marketplace
+/plugin install advance-dev-agents@advance-dev-agents
 ```
 
 ---
