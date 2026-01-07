@@ -1,4 +1,25 @@
-# Advance Dev Agents
+# Advanced Claude Code Agents                
+
+
+<img width="1080" height="559" alt="image" src="https://github.com/user-attachments/assets/89e48112-6509-4645-bd2c-73a22dc094d2" />
+
+---
+
+## 📦 Installation
+
+```bash
+# 1. Add the marketplace
+/plugin marketplace add https://github.com/BryanCaceres/advanced-claude-code-Agents
+
+# 2. Install the plugin
+/plugin install advance-dev-agents@advance-dev-agents-marketplace
+```
+
+---
+
+## 🔌 Dependencies
+
+This plugin integrates with **Context7 MCP server** for real-time documentation retrieval.
 
 ---
 
@@ -6,47 +27,17 @@ Look, I'll be honest with you: I was tired of AI giving me code that *kinda* wor
 
 > *(Yes, I'm looking at you, Claude Sonnet. No, not you specifically—you're actually great. But you know who you are.)*
 
-You know the drill: you ask an LLM to "add {something}" or "fix that bug," and it gives you something that wo...oooorks (?) (if you're lucky), but nobody has actually reviewed it. No security check, no architecture validation, no "hey, this might cause a race condition at 3 AM when your users from whatever timezone is currently angry are blaming you for everything."
+This multi-agent system for `Claude Code` that turns your casual "just make it work" prompts into actual, production-grade workflows with peer review, validation loops, and agents that specialize in different aspects of code quality.
+
+Think of it like having a senior dev team that actually reviews each other's work before anything gets merged. I know, """" revolutionary """" concept—code that gets reviewed before production.
+
+
+## Core Workflows
 
 ---
 
-**Advance Dev Agents** is my answer to that problem.
 
-It's a multi-agent system for `Claude Code` that turns your casual "just make it work" prompts into actual, production-grade workflows with peer review, validation loops, and agents that specialize in different aspects of code quality.
 
-Think of it like having a senior dev team that actually reviews each other's work before anything gets merged. I know, """revolutionary""" concept—code that gets reviewed before production.
-
----
-
-## So... Why Did I Build This?
-
-Because the "one prompt to rule them all" approach has some *issues* (and by "some" I mean "a lot"):
-
-### The Core Problems
-
-- **Cognitive Overload**: You're asking one poor, overworked prompt to care about security, performance, architecture, AND business logic all at once. That's not ambitious—that's asking for a nervous breakdown in a text box.
-
-- **No Peer Review**: Changes happen without anyone actually checking them from different perspectives. It's like code review where everyone just clicks "Approve" because they want to go home. *(We've all been there.)*
-
-- **Shallow Analysis**: Generic prompts don't go deep into domain-specific stuff like OWASP security, SOLID patterns, or database optimization. It's like reading the abstract of a paper and claiming you understand the research.
-
-- **No Iteration**: Once the AI responds, that's it. No built-in "wait, let me refine this" loop. First try or bust, baby.
-
-- **Lost Knowledge**: Every interaction is isolated—learnings aren't captured for next time. It's Groundhog Day, but with more debugging and less Bill Murray.
-
----
-
-### The Solution
-
-**Advance Dev Agents** fixes this by treating development as what it actually is: a team sport.
-
-Specialized agents work in parallel, validate each other's work, and only proceed when independent reviewers say "yeah, this is actually good."
-
----
-
-## The Three Core Workflows of this Plugin
-
----
 
 ### 📋 Workflow 1: Code Review Orchestrator
 
@@ -118,28 +109,9 @@ If recurring error patterns are identified, the orchestrator will ask you if you
 
 > **WHY THIS?** As you run more code reviews, you'll rack up tons of snippets and examples to add to your `AGENTS.md` | `CLAUDE.md` or use in your Claude skills.
 
----
+-------------------------------------------------------------------------X-----------------------------------------------------------------
 
-#### What You Get
 
-A professional report saved to `docs/agent_reports/` containing:
-
-- **Executive Summary** — 3-paragraph technical overview, fluff-free
-- **Key Findings** — prioritized by severity with specific fix recommendations
-- **Actionable Roadmap** — concrete technical steps before merge *(no "maybe refactor later" vagueness)*
-- **AI Context** — dense technical summary for future AI interactions
-
----
-
-#### Why This Beats a Simple Prompt
-
-A single "review my code" prompt gives you a generalist's overview—like asking your friend who "knows computers" to look at your code.
-
-**This workflow gives you** five senior specialists, each examining your code through their domain-expert lens, plus an orchestrator ensuring consistency and a learning system that actually prevents you from making the same mistakes twice.
-
-It's the difference between "looks good to me" and "here's exactly what's wrong, why it's wrong, and how to fix it before production explodes."
-
----
 
 ## 🧑‍💻 Human in the Loop
 
@@ -151,7 +123,9 @@ You need to read the report, because AI tends to oversell the need for massive r
 
 So yes, human—read the report and strip out anything you think shouldn't be fixed. This report feeds into the next workflow, which handles the bulk fixes.
 
----
+
+
+-------------------------------------------------------------------------X-----------------------------------------------------------------
 
 ### 🔧 Workflow 2: Code Fixer Orchestrator
 
@@ -205,25 +179,10 @@ Multiple `code-fixer` agents are invoked in parallel:
 - **Refinement Loop**: If validation fails, code-fixers are reassigned to address issues
 - **Closure**: Only after "ACCEPT" from the reviewer is completion confirmed *(finish lines exist for a reason)*
 
----
 
-#### What You Get
+-------------------------------------------------------------------------X-----------------------------------------------------------------
 
-- A strategic execution plan that groups related problems intelligently
-- Parallel execution by multiple specialist agents
-- Real-time progress tracking in a centralized document
-- Holistic validation of the entire change set
-- Confidence that all fixes are integrated and consistent *(not a patchwork of "hopefully this works")*
 
----
-
-#### Why This Beats a Simple Prompt
-
-A "fix these issues" prompt gives you sequential fixes that might conflict with each other.
-
-**This workflow gives you** strategic grouping, parallel execution, centralized tracking, and holistic validation. It transforms a laundry list of "please fix everything" into a coordinated architectural improvement effort that doesn't introduce new problems while fixing the old ones.
-
----
 
 ### ✨ Workflow 3: Code Change Orchestrator
 
@@ -292,28 +251,7 @@ A "fix these issues" prompt gives you sequential fixes that might conflict with 
 - Root cause, anti-patterns, and solutions are archived
 - Future agents benefit from this knowledge
 
----
-
-#### What You Get
-
-- A progress document in `docs/code_changes/` tracking every decision and modification
-- Implemented changes that have passed independent validation *(not just "it compiled")*
-- Optional knowledge persistence for bug fixes
-- Confidence that the change is correct, maintainable, and secure—imagine that
-
----
-
-#### Why This Beats a Simple Prompt
-
-A "implement this feature" prompt gives you a first attempt that might work if you're lucky.
-
-**This workflow gives you** exploration, research, user confirmation, implementation, independent validation, and iterative refinement until a senior reviewer grants approval.
-
-It's the difference between "here's my draft" and "here's a peer-reviewed, tested, documented change that won't cause incidents at 3 AM."
-
----
-
-## The Agent Ecosystem
+## The Plugin Agent Ecosystem
 
 ---
 
@@ -397,12 +335,9 @@ This plugin integrates with **Context7 MCP server** for real-time documentation 
 
 ---
 
-**Advance Dev Agents** transforms AI-assisted development from a prompt-response cycle into a disciplined engineering process with peer review, validation loops, and organizational learning.
-
----
 
 <div align="center">
 
-*Developed by **Bryan Duarte** — [LinkedIn](https://www.linkedin.com/in/bryanduarte/) — [GitHub](https://github.com/BryanCaceres)*
+*Developed with ♥️ by **Bryan Duarte** — [LinkedIn](https://www.linkedin.com/in/bryanduarte/) — [GitHub](https://github.com/BryanCaceres)*
 
 </div>
