@@ -36,6 +36,9 @@ Think of it like having a senior dev team that actually reviews each other's wor
 
 ---
 
+
+
+
 ### 📋 Workflow 1: Code Review Orchestrator
 
 **Command:** `/code-review:code-review-[custom] [scope]`
@@ -106,7 +109,8 @@ If recurring error patterns are identified, the orchestrator will ask you if you
 
 > **WHY THIS?** As you run more code reviews, you'll rack up tons of snippets and examples to add to your `AGENTS.md` | `CLAUDE.md` or use in your Claude skills.
 
----
+-------------------------------------------------------------------------X-----------------------------------------------------------------
+
 
 
 ## 🧑‍💻 Human in the Loop
@@ -120,7 +124,8 @@ You need to read the report, because AI tends to oversell the need for massive r
 So yes, human—read the report and strip out anything you think shouldn't be fixed. This report feeds into the next workflow, which handles the bulk fixes.
 
 
----
+
+-------------------------------------------------------------------------X-----------------------------------------------------------------
 
 ### 🔧 Workflow 2: Code Fixer Orchestrator
 
@@ -174,7 +179,9 @@ Multiple `code-fixer` agents are invoked in parallel:
 - **Refinement Loop**: If validation fails, code-fixers are reassigned to address issues
 - **Closure**: Only after "ACCEPT" from the reviewer is completion confirmed *(finish lines exist for a reason)*
 
----
+
+-------------------------------------------------------------------------X-----------------------------------------------------------------
+
 
 
 ### ✨ Workflow 3: Code Change Orchestrator
