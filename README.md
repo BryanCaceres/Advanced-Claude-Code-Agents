@@ -27,31 +27,10 @@ Look, I'll be honest with you: I was tired of AI giving me code that *kinda* wor
 
 > *(Yes, I'm looking at you, Claude Sonnet. No, not you specifically—you're actually great. But you know who you are.)*
 
-You know the drill: you ask an LLM to "add {something}" or "fix that bug," and it gives you something that wo...oooorks (?) (if you're lucky), but nobody has actually reviewed it. No security check, no architecture validation, no "hey, this might cause a race condition at 3 AM when your users from whatever timezone is currently angry are blaming you for everything."
+This multi-agent system for `Claude Code` that turns your casual "just make it work" prompts into actual, production-grade workflows with peer review, validation loops, and agents that specialize in different aspects of code quality.
 
----
+Think of it like having a senior dev team that actually reviews each other's work before anything gets merged. I know, """" revolutionary """" concept—code that gets reviewed before production.
 
-**Advance Dev Agents** is my answer to that problem.
-
-It's a multi-agent system for `Claude Code` that turns your casual "just make it work" prompts into actual, production-grade workflows with peer review, validation loops, and agents that specialize in different aspects of code quality.
-
-Think of it like having a senior dev team that actually reviews each other's work before anything gets merged. I know, """revolutionary""" concept—code that gets reviewed before production.
-
----
-
-## So... Why Did I Build This?
-
-Because the "one prompt to rule them all" approach has some *issues* (and by "some" I mean "a lot"):
-
-### The Core Problems
-
-- **Cognitive Overload**: You're asking one poor, overworked prompt to care about security, performance, architecture, AND business logic all at once. That's not ambitious—that's asking for a nervous breakdown in a text box.
-- **No Peer Review**: Changes happen without anyone actually checking them from different perspectives. It's like code review where everyone just clicks "Approve" because they want to go home. *(We've all been there.)*
-- **Shallow Analysis**: Generic prompts don't go deep into domain-specific stuff like OWASP security, SOLID patterns, or database optimization. It's like reading the abstract of a paper and claiming you understand the research.
-- **No Iteration**: Once the AI responds, that's it. No built-in "wait, let me refine this" loop. First try or bust, baby.
-- **Lost Knowledge**: Every interaction is isolated—learnings aren't captured for next time. It's Groundhog Day, but with more debugging and less Bill Murray.
-
----
 
 ## Core Workflows
 
