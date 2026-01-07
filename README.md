@@ -1,20 +1,7 @@
-    :::     :::::::::  :::     :::     :::     ::::    :::  ::::::::  :::::::::: :::::::::  
-  :+: :+:   :+:    :+: :+:     :+:   :+: :+:   :+:+:   :+: :+:    :+: :+:        :+:    :+: 
- +:+   +:+  +:+    +:+ +:+     +:+  +:+   +:+  :+:+:+  +:+ +:+        +:+        +:+    +:+ 
-+#++:++#++: +#+    +:+ +#+     +:+ +#++:++#++: +#+ +:+ +#+ +#+        +#++:++#   +#+    +:+ 
-+#+     +#+ +#+    +#+  +#+   +#+  +#+     +#+ +#+  +#+#+# +#+        +#+        +#+    +#+ 
-#+#     #+# #+#    #+#   #+#+#+#   #+#     #+# #+#   #+#+# #+#    #+# #+#        #+#    #+# 
-###     ### #########      ###     ###     ### ###    ####  ########  ########## #########  
-    :::      ::::::::  :::::::::: ::::    ::: :::::::::::  ::::::::                         
-  :+: :+:   :+:    :+: :+:        :+:+:   :+:     :+:     :+:    :+:                        
- +:+   +:+  +:+        +:+        :+:+:+  +:+     +:+     +:+                               
-+#++:++#++: :#:        +#++:++#   +#+ +:+ +#+     +#+     +#++:++#++                        
-+#+     +#+ +#+   +#+# +#+        +#+  +#+#+#     +#+            +#+                        
-#+#     #+# #+#    #+# #+#        #+#   #+#+#     #+#     #+#    #+#                        
-###     ###  ########  ########## ###    ####     ###      ########                         
+# Advanced Claude Code Agents                
 
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/89e48112-6509-4645-bd2c-73a22dc094d2" />
+<img width="1080" height="559" alt="image" src="https://github.com/user-attachments/assets/89e48112-6509-4645-bd2c-73a22dc094d2" />
 
 ---
 
@@ -22,7 +9,7 @@
 
 ```bash
 # 1. Add the marketplace
-/plugin marketplace add https://github.com/YOUR_USERNAME/YOUR_REPO
+/plugin marketplace add https://github.com/BryanCaceres/advanced-claude-code-Agents
 
 # 2. Install the plugin
 /plugin install advance-dev-agents@advance-dev-agents-marketplace
@@ -59,26 +46,14 @@ Because the "one prompt to rule them all" approach has some *issues* (and by "so
 ### The Core Problems
 
 - **Cognitive Overload**: You're asking one poor, overworked prompt to care about security, performance, architecture, AND business logic all at once. That's not ambitious—that's asking for a nervous breakdown in a text box.
-
 - **No Peer Review**: Changes happen without anyone actually checking them from different perspectives. It's like code review where everyone just clicks "Approve" because they want to go home. *(We've all been there.)*
-
 - **Shallow Analysis**: Generic prompts don't go deep into domain-specific stuff like OWASP security, SOLID patterns, or database optimization. It's like reading the abstract of a paper and claiming you understand the research.
-
 - **No Iteration**: Once the AI responds, that's it. No built-in "wait, let me refine this" loop. First try or bust, baby.
-
 - **Lost Knowledge**: Every interaction is isolated—learnings aren't captured for next time. It's Groundhog Day, but with more debugging and less Bill Murray.
 
 ---
 
-### The Solution
-
-**Advance Dev Agents** fixes this by treating development as what it actually is: a team sport.
-
-Specialized agents work in parallel, validate each other's work, and only proceed when independent reviewers say "yeah, this is actually good."
-
----
-
-## The Three Core Workflows of this Plugin
+## Core Workflows
 
 ---
 
@@ -154,26 +129,6 @@ If recurring error patterns are identified, the orchestrator will ask you if you
 
 ---
 
-#### What You Get
-
-A professional report saved to `docs/agent_reports/` containing:
-
-- **Executive Summary** — 3-paragraph technical overview, fluff-free
-- **Key Findings** — prioritized by severity with specific fix recommendations
-- **Actionable Roadmap** — concrete technical steps before merge *(no "maybe refactor later" vagueness)*
-- **AI Context** — dense technical summary for future AI interactions
-
----
-
-#### Why This Beats a Simple Prompt
-
-A single "review my code" prompt gives you a generalist's overview—like asking your friend who "knows computers" to look at your code.
-
-**This workflow gives you** five senior specialists, each examining your code through their domain-expert lens, plus an orchestrator ensuring consistency and a learning system that actually prevents you from making the same mistakes twice.
-
-It's the difference between "looks good to me" and "here's exactly what's wrong, why it's wrong, and how to fix it before production explodes."
-
----
 
 ## 🧑‍💻 Human in the Loop
 
@@ -184,6 +139,7 @@ You need to read the report, because AI tends to oversell the need for massive r
 **YES** — Your human judgment still matters.
 
 So yes, human—read the report and strip out anything you think shouldn't be fixed. This report feeds into the next workflow, which handles the bulk fixes.
+
 
 ---
 
@@ -241,23 +197,6 @@ Multiple `code-fixer` agents are invoked in parallel:
 
 ---
 
-#### What You Get
-
-- A strategic execution plan that groups related problems intelligently
-- Parallel execution by multiple specialist agents
-- Real-time progress tracking in a centralized document
-- Holistic validation of the entire change set
-- Confidence that all fixes are integrated and consistent *(not a patchwork of "hopefully this works")*
-
----
-
-#### Why This Beats a Simple Prompt
-
-A "fix these issues" prompt gives you sequential fixes that might conflict with each other.
-
-**This workflow gives you** strategic grouping, parallel execution, centralized tracking, and holistic validation. It transforms a laundry list of "please fix everything" into a coordinated architectural improvement effort that doesn't introduce new problems while fixing the old ones.
-
----
 
 ### ✨ Workflow 3: Code Change Orchestrator
 
@@ -326,28 +265,7 @@ A "fix these issues" prompt gives you sequential fixes that might conflict with 
 - Root cause, anti-patterns, and solutions are archived
 - Future agents benefit from this knowledge
 
----
-
-#### What You Get
-
-- A progress document in `docs/code_changes/` tracking every decision and modification
-- Implemented changes that have passed independent validation *(not just "it compiled")*
-- Optional knowledge persistence for bug fixes
-- Confidence that the change is correct, maintainable, and secure—imagine that
-
----
-
-#### Why This Beats a Simple Prompt
-
-A "implement this feature" prompt gives you a first attempt that might work if you're lucky.
-
-**This workflow gives you** exploration, research, user confirmation, implementation, independent validation, and iterative refinement until a senior reviewer grants approval.
-
-It's the difference between "here's my draft" and "here's a peer-reviewed, tested, documented change that won't cause incidents at 3 AM."
-
----
-
-## The Agent Ecosystem
+## The Plugin Agent Ecosystem
 
 ---
 
@@ -412,12 +330,9 @@ Orchestrators manage workflows, coordinate parallel execution, consolidate findi
 
 ---
 
-**Advance Dev Agents** transforms AI-assisted development from a prompt-response cycle into a disciplined engineering process with peer review, validation loops, and organizational learning.
-
----
 
 <div align="center">
 
-*Developed by **Bryan Duarte** — [LinkedIn](https://www.linkedin.com/in/bryanduarte/) — [GitHub](https://github.com/BryanCaceres)*
+*Developed with ♥️ by **Bryan Duarte** — [LinkedIn](https://www.linkedin.com/in/bryanduarte/) — [GitHub](https://github.com/BryanCaceres)*
 
 </div>
