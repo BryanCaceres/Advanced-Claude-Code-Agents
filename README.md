@@ -21,7 +21,7 @@
 
 ```bash
 # Add the marketplace
-/plugin marketplace add https://github.com/BryanCaceres/advanced-claude-code-Agents
+/plugin marketplace add github.com/bryan-duarte/advanced-claude-code-agents
 
 # Install the plugin
 /plugin install advance-dev-agents@advance-dev-agents-marketplace
