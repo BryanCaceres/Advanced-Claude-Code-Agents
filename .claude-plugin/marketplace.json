@@ -1,13 +1,16 @@
 {
-  "name": "advance-dev-agents",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "advance-dev-agents-marketplace",
+  "version": "1.0.0",
+  "description": "Marketplace for Advance Dev Agents",
   "owner": {
     "name": "Bryan Duarte",
-    "github": "BryanCaceres"
+    "github": "github.com/bryan-duarte/advanced-claude-code-agents"
   },
   "plugins": [
     {
       "name": "advance-dev-agents",
-      "source": "./plugins/advance-dev-agents",
+      "source": "plugins/advance-dev-agents",
       "description": "Advance Dev Agents - A toolset for agentic development"
     }
   ]

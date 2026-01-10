@@ -10,6 +10,12 @@
   "repository": "https://github.com/BryanCaceres/advanced-claude-code-agents",
   "license": "MIT",
   "keywords": ["code-reviews", "agents", "claude", "advanced"],
+  "commands": [
+    "commands"
+  ],
+  "agents": [
+    "agents"
+  ],
   "mcpServers": {
     "context7": {
       "command": "npx",
@@ -17,6 +23,10 @@
         "-y",
         "@context7/mcp-server"
       ]
+    },
+    "deepwiki": {
+      "type": "http",
+      "url": "https://mcp.deepwiki.com/mcp"
     }
   }
 }
