@@ -21,14 +21,8 @@
 
 Add the marketplace
 ```bash
-<<<<<<< HEAD
-# Add the marketplace
-/plugin marketplace add github.com/bryan-duarte/advanced-claude-code-agents
-=======
 /plugin marketplace add bryan-duarte/advanced-claude-code-agents
 ```
->>>>>>> a80c230 (refactor(plugin): consolidate mcp configuration into dedicated file)
-
 Install the plugin
 ```bash
 /plugin install advance-dev-agents@advance-dev-agents
