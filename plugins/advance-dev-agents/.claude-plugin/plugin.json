@@ -3,27 +3,6 @@
   "version": "1.0.0",
   "description": "Comprehensive suite for advanced agentic development, featuring specialized commands, subagents, and skills.",
   "author": {
-    "name": "Bryan Duarte",
-    "url": "https://github.com/bryan-duarte"
-  },
-  "homepage": "https://github.com/bryan-duarte/advanced-claude-code-agents",
-  "repository": "https://github.com/bryan-duarte/advanced-claude-code-agents",
-  "license": "MIT",
-  "keywords": ["code-reviews", "agents", "claude", "advanced"],
-  "mcpServers": {
-    "deepwiki": {
-      "type": "http",
-      "url": "https://mcp.deepwiki.com/mcp"
-    },
-    "context7": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@upstash/context7-mcp@latest"
-      ],
-      "env": {
-        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
-      }
-    }
+    "name": "Bryan Duarte"
   }
 }

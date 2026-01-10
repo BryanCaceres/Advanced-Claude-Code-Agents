@@ -1,26 +1,13 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "advance-dev-agents",
-  "metadata": {
-    "description": "A comprehensive marketplace for advanced agentic development tools, featuring specialized commands, subagents, and skills for Claude Code."
-  },
   "owner": {
-    "name": "Bryan Duarte",
-    "github": "bryan-duarte"
+    "name": "Bryan Duarte"
   },
   "plugins": [
     {
       "name": "advance-dev-agents",
-      "source": {
-        "source": "github",
-        "repo": "bryan-duarte/advanced-claude-code-agents"
-      },
-      "description": "Comprehensive suite for advanced agentic development, featuring specialized commands, subagents, and skills.",
-      "version": "1.0.0",
-      "author": {
-        "name": "Bryan Duarte"
-      },
-      "keywords": ["code-reviews", "agents", "claude", "advanced"]
+      "source": "./plugins/advance-dev-agents",
+      "description": "Comprehensive suite for advanced agentic development, featuring specialized commands, subagents, and skills."
     }
   ]
 }

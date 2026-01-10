@@ -10,7 +10,7 @@
 *Multi-agent system for production workflows with peer review and iterative validation*
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Plugin-black?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTIgMmEzIDMgMCAwIDAtMyAzdjE0YTMgMyAwIDAgMCA2IDBWNWEzIDMgMCAwIDAtMy0zeiIvPjxwYXRoIGQ9Ik0xMiAyMmMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNi02IDItNiA2IDIuNjg2IDYgNiA2ek0xMiAxNmMtMS4xMDUgMC0yLS4wNTgtMi0uMTA5VjguMTA5QzEwIDguMDU4IDEwLjg5NSA4IDEyIDhzMiAuMDU4IDIgLjEwOXY3Ljc4MmMwIC4wNTEtLjg5NS4xMDktMi4xMDkuMTA5eiIvPjwvc3ZnPg==)](https://claude.ai/code)
-[![Version](https://img.shields.io/badge/version-1.0.0-black?style=flat)](https://github.com/BryanCaceres/advanced-claude-code-Agents)
+[![Version](https://img.shields.io/badge/version-1.0.0-black?style=flat)](https://github.com/bryan-duarte/advanced-claude-code-agents)
 
 </div>
 
@@ -19,21 +19,28 @@
 
 ## Quick Start
 
+Add the marketplace
 ```bash
+<<<<<<< HEAD
 # Add the marketplace
 /plugin marketplace add github.com/bryan-duarte/advanced-claude-code-agents
+=======
+/plugin marketplace add bryan-duarte/advanced-claude-code-agents
+```
+>>>>>>> a80c230 (refactor(plugin): consolidate mcp configuration into dedicated file)
 
-# Install the plugin
-/plugin install advance-dev-agents@advance-dev-agents-marketplace
+Install the plugin
+```bash
+/plugin install advance-dev-agents@advance-dev-agents
 ```
 
 <br>
 
 ## MCP Configuration
 
-Real-time documentation is powered by **DeepWiki** (Zero-config) and **Context7** (Auth required).
+Real-time documentation is powered by **Context7**.
 
-Get you context7 api key from [Context7](https://context7.com/dashboard)
+Get your Context7 API key from [Context7](https://context7.com/dashboard)
 
 **Persistent Setup (Recommended)**
 
